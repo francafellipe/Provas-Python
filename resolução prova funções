@@ -1,0 +1,14 @@
+def maior_numero(x,y):
+    if x > y :
+        return x
+    else :
+        return y
+    
+
+print(maior_numero(20,30))
+
+def maior_numero ( x, y ):
+
+    return max(x,y)
+
+print(maior_numero(20,30))
