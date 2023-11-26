@@ -1,0 +1,17 @@
+create database if not exists Mercado;
+
+use Mercado;
+
+create table if not exists Clientes(
+	id_client int primary key auto_increment,
+    nome varchar(90),
+    email varchar (50),
+    telefone varchar (20)
+);
+create table if not exists Vendas(
+	id_vendas int primary key auto_increment,
+	id_client int,
+    FOREIGN KEY (id_client) references Clientes(id_client),
+	data_venda date,
+    valor_venda int
+);
