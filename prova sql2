@@ -1,0 +1,16 @@
+
+create database if not exists escola;
+use escola;
+
+CREATE TABLE alunos(
+id INT PRIMARY KEY auto_increment,
+nome VARCHAR (50),
+email VARCHAR (50)
+);
+CREATE TABLE matriculas (
+id INT PRIMARY KEY auto_increment,
+id_aluno INT,
+disciplina VARCHAR(50),
+nota DECIMAL(4,2),
+foreign key (id_aluno) references alunos(id)
+);
