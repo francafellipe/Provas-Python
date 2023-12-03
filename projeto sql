@@ -1,0 +1,3 @@
+SELECT AVG(nota) AS media_notas
+FROM Matricula
+WHERE id_disciplina = 1; #escolher o id da disciplina < substituindo o 1 
